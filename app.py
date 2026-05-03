@@ -1,7 +1,8 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-import tensorflow as tf   # ✅ FIX: added import
+import tensorflow as tf 
+# ✅ FIX: added import
 
 # Load model
 @st.cache_resource
@@ -28,8 +29,7 @@ def load_facemask_model():
     ])
 
     # Load weights
-    model.load_weights('facemask_weights.weights.h5')
-
+  model = tf.keras.models.load_model("model.h5")
     return model
 
 
