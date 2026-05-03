@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+
 
 # Rebuild the model architecture
 @st.cache_resource
